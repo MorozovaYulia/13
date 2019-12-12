@@ -3,18 +3,18 @@ using namespace std;
 int main()
 {
     int N, A, B;
-    int arr[20];
-    cout << "Enter N, A, B: " << endl;
+    int a[20];
+    cout << "Enter N, A, B: \n";
     cin >> N >> A >> B;
-    arr[0] = A;
-    arr[1] = B;
+    a[0] = A;
+    a[1] = B;
  
     for (int i = 2; i < N; i++) {
-        arr[i] = arr[i - 2] + arr[i - 1];
+        a[i] = a[i - 2] + a[i - 1];
     }
  
     for (int i = 0; i < N; i++) {
-        cout << arr[i] << " ";
+        cout << a[i] << " ";
     }
  
 }
